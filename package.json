@@ -9,6 +9,7 @@
   "dependencies": {
     "yeoman-generator": "^2.0.2"
   },
+  "files": ["generators"],
   "repository": {
     "type": "git",
     "url": "git@github.com:17khba/generator-dt-demo.git"
