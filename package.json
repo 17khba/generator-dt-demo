@@ -1,0 +1,15 @@
+{
+  "name": "generator-dt-demo",
+  "version": "0.1.0",
+  "description": "dt前端脚手架",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "yeoman-generator": "^2.0.2"
+  },
+  "keywords": ["yeoman-generator"],
+  "author": "17khba",
+  "license": "MIT"
+}
