@@ -9,6 +9,11 @@
   "dependencies": {
     "yeoman-generator": "^2.0.2"
   },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:17khba/generator-dt-demo.git"
+  },
+  "homepage": "https://github.com/17khba/generator-dt-demo",
   "keywords": ["yeoman-generator"],
   "author": "17khba",
   "license": "MIT"
