@@ -7,10 +7,10 @@ module.exports = class extends Generator {
 
     this.argument("project", {
       type: "String",
-      required: false
+      required: true
     });
   }
-  rompting() {
+  prompting() {
     return this.prompt([
       {
         type: "input",
@@ -34,10 +34,12 @@ module.exports = class extends Generator {
       this.project = answers.project || this.options.project;
       this.author = answers.author;
       this.description = answers.description;
+      this.createTime = new Date().toLocaleDateString();
 
       this.log("project", this.project);
       this.log("author", this.author);
       this.log("description", this.description);
+      this.log("createTime", this.createTime);
     });
   }
   writing() {
@@ -46,9 +48,9 @@ module.exports = class extends Generator {
       this.destinationPath("./"),
       {
         project: this.project,
-        user: this.user,
-        email: this.email,
-        description: this.description
+        author: this.author,
+        description: this.description,
+        createTime: this.createTime
       },
       {},
       {
@@ -65,7 +67,7 @@ module.exports = class extends Generator {
         project: this.project,
         author: this.author,
         description: this.description,
-        createTime: new Date().toLocaleDateString()
+        createTime: this.createTime
       }
     );
   }
