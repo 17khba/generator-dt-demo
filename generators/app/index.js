@@ -1,4 +1,5 @@
 var path = require("path");
+var moment = require("moment");
 var Generator = require("yeoman-generator");
 
 module.exports = class extends Generator {
@@ -34,7 +35,7 @@ module.exports = class extends Generator {
       this.project = answers.project || this.options.project;
       this.author = answers.author;
       this.description = answers.description;
-      this.createTime = new Date().toLocaleDateString();
+      this.createTime = moment().format("YYYY-MM-DD");
 
       this.log("project", this.project);
       this.log("author", this.author);
