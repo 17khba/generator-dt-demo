@@ -1,3 +1,4 @@
+var path = require("path");
 var Generator = require("yeoman-generator");
 
 module.exports = class extends Generator {
