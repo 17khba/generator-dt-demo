@@ -5,11 +5,6 @@ var Generator = require("yeoman-generator");
 module.exports = class extends Generator {
   constructor(args, opts) {
     super(args, opts);
-
-    this.argument("project", {
-      type: "String",
-      required: true
-    });
   }
   prompting() {
     return this.prompt([
